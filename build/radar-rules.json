@@ -520,19 +520,6 @@
       }
     ]
   },
-  "cohere.com": {
-    "_name": "Cohere",
-    ".": [
-      {
-        "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/cohere",
-        "source": [
-          "/"
-        ],
-        "target": "/cohere/blog"
-      }
-    ]
-  },
   "cowlevel.net": {
     "_name": "奶牛关",
     ".": [
@@ -12112,6 +12099,53 @@
           "/:region/networking-iot-servers/:productLine/:series/:model"
         ],
         "target": "/asus/bios/:model"
+      },
+      {
+        "title": "Driver",
+        "docs": "https://docs.rsshub.app/routes/asus",
+        "source": [
+          "/displays-desktops/:productLine/:series/:model",
+          "/laptops/:productLine/:series/:model",
+          "/motherboards-components/:productLine/:series/:model",
+          "/networking-iot-servers/:productLine/:series/:model",
+          "/:region/displays-desktops/:productLine/:series/:model",
+          "/:region/laptops/:productLine/:series/:model",
+          "/:region/motherboards-components/:productLine/:series/:model",
+          "/:region/networking-iot-servers/:productLine/:series/:model"
+        ],
+        "target": "/asus/driver/:model"
+      }
+    ],
+    "rog": [
+      {
+        "title": "BIOS",
+        "docs": "https://docs.rsshub.app/routes/asus",
+        "source": [
+          "/laptops/:series/:model/*",
+          "/motherboards/:series/:model/*",
+          "/gaming-handhelds/:series/:model/*",
+          "/desktops/:series/:model/*",
+          "/:region/laptops/:series/:model/*",
+          "/:region/motherboards/:series/:model/*",
+          "/:region/gaming-handhelds/:series/:model/*",
+          "/:region/desktops/:series/:model/*"
+        ],
+        "target": "/asus/bios/:model"
+      },
+      {
+        "title": "Driver",
+        "docs": "https://docs.rsshub.app/routes/asus",
+        "source": [
+          "/laptops/:series/:model/*",
+          "/motherboards/:series/:model/*",
+          "/gaming-handhelds/:series/:model/*",
+          "/desktops/:series/:model/*",
+          "/:region/laptops/:series/:model/*",
+          "/:region/motherboards/:series/:model/*",
+          "/:region/gaming-handhelds/:series/:model/*",
+          "/:region/desktops/:series/:model/*"
+        ],
+        "target": "/asus/driver/:model"
       }
     ],
     ".": [
@@ -17509,6 +17543,20 @@
           "/blog"
         ],
         "target": "/cognition/blog"
+      }
+    ]
+  },
+  "cohere.com": {
+    "_name": "Cohere",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/cohere",
+        "source": [
+          "/blog",
+          "/blog/:slug"
+        ],
+        "target": "/cohere/blog"
       }
     ]
   },
@@ -24196,6 +24244,19 @@
           "/"
         ],
         "target": "/grist/featured"
+      }
+    ]
+  },
+  "groq.com": {
+    "_name": "Groq",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/groq",
+        "source": [
+          "/blog"
+        ],
+        "target": "/groq/blog"
       }
     ]
   },
@@ -34865,6 +34926,20 @@
           "/"
         ],
         "target": "/missav/new"
+      }
+    ]
+  },
+  "mistral.ai": {
+    "_name": "Mistral AI",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/mistral",
+        "source": [
+          "/news",
+          "/news/rss"
+        ],
+        "target": "/mistral/news"
       }
     ]
   },
@@ -52639,6 +52714,46 @@
           "/:country/en/c/:gender"
         ],
         "target": "/arcteryx/outlet/:country/:gender"
+      }
+    ]
+  },
+  "arm.com": {
+    "_name": "Arm",
+    "newsroom": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/blog",
+          "/blog/:slug"
+        ],
+        "target": "/arm/blog"
+      },
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/topics/:topic"
+        ],
+        "target": "/arm/blog/:topic"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/news",
+          "/news/:slug",
+          "/"
+        ],
+        "target": "/arm/news"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/topics/:topic"
+        ],
+        "target": "/arm/news/:topic"
       }
     ]
   },
